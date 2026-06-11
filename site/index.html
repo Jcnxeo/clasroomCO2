@@ -16,6 +16,7 @@
       </div>
       <div class="actions" aria-label="자료 링크">
         <a class="icon-link" href="../data/processed/indoor_air_quality_subway_standard.csv" download title="정리 CSV 다운로드">CSV</a>
+        <a class="icon-link" href="../data/processed/daejeon_indoor_air_quality.csv" download title="대전 데이터 다운로드">대전</a>
         <a class="icon-link" href="../data/processed/classroom_focus_survey_template.csv" download title="교실 조사 양식 다운로드">설문</a>
       </div>
     </header>
@@ -213,33 +214,6 @@
       </article>
     </section>
 
-    <section class="panel table-panel">
-      <div class="panel-head">
-        <div>
-          <h2>정리 데이터 미리보기</h2>
-          <p>원자료에서 추출한 285행 중 일부를 보여준다.</p>
-        </div>
-        <label class="filter">
-          <span>지역</span>
-          <select id="provinceFilter"></select>
-        </label>
-      </div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>지역</th>
-              <th>지점</th>
-              <th>CO2</th>
-              <th>PM2.5</th>
-              <th>VOC</th>
-              <th>측정연도</th>
-            </tr>
-          </thead>
-          <tbody id="dataTable"></tbody>
-        </table>
-      </div>
-    </section>
   </main>
   <script src="./data.js"></script>
   <script src="./app.js"></script>

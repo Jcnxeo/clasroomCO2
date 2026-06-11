@@ -33,35 +33,6 @@
     topCo2List.appendChild(item);
   });
 
-  const provinces = ["전체", ...Array.from(new Set(records.map((r) => r.province).filter(Boolean)))];
-  const filter = document.getElementById("provinceFilter");
-  provinces.forEach((name) => {
-    const option = document.createElement("option");
-    option.value = name;
-    option.textContent = name;
-    filter.appendChild(option);
-  });
-
-  const table = document.getElementById("dataTable");
-  function renderTable() {
-    const selected = filter.value;
-    const rows = records
-      .filter((r) => selected === "전체" || r.province === selected)
-      .slice(0, 18);
-    table.innerHTML = rows.map((r) => `
-      <tr>
-        <td>${r.province || ""} ${r.district || ""}</td>
-        <td>${r.station || ""}</td>
-        <td>${fmt(r.co2_num)}</td>
-        <td>${fmt(r.pm25_num)}</td>
-        <td>${fmt(r.voc_num)}</td>
-        <td>${r.year || ""}</td>
-      </tr>
-    `).join("");
-  }
-  filter.addEventListener("change", renderTable);
-  renderTable();
-
   const average = (rows, key) => {
     const values = rows.map((r) => r[key]).filter((v) => typeof v === "number");
     return values.reduce((sum, v) => sum + v, 0) / values.length;

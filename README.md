@@ -6,6 +6,7 @@
 
 - 웹사이트: `site/index.html`
 - 정리 데이터: `data/processed/indoor_air_quality_subway_standard.csv`
+- 대전 정리 데이터: `data/processed/daejeon_indoor_air_quality.csv`
 - 교실 조사 양식: `data/processed/classroom_focus_survey_template.csv`
 
 ## 핵심 결론

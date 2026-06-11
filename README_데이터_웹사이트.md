@@ -5,6 +5,8 @@
 - `site/index.html`: 브라우저로 바로 열 수 있는 분석 웹사이트
 - `site/data.js`: 웹사이트에 표시되는 정리 데이터
 - `data/processed/indoor_air_quality_subway_standard.csv`: 공공데이터포털 실내공기질 표준데이터 정리본
+- `data/processed/daejeon_indoor_air_quality.csv`: 대전광역시 행만 따로 필터링한 정리본
+- `data/processed/daejeon_summary.json`: 대전광역시 데이터 요약
 - `data/processed/analysis_summary.json`: 정리 데이터 통계 요약
 - `data/processed/paper_summary.json`: 제공한 KCI 논문에서 추출한 근거 문장 요약
 - `data/processed/classroom_focus_survey_template.csv`: 실제 교실에서 CO2, 온도, 습도, 졸림, 집중도를 기록할 조사 양식
